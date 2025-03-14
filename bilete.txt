@@ -1,0 +1,4 @@
+standard 101 8 10 urban
+abonament 102 9 12 interurban 1
+abonament 103 10 14 urban 0
+reducere 104 7 9 student
