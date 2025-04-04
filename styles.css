@@ -130,97 +130,91 @@ nav ul {
 
 
 
-/* Resetare stiluri */
- nav {
-  height: 80px;
-  background-color: #12e96fda;
-  color: rgb(22, 201, 189);
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-}
-
-
-/* Stilizare navbar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  color: rgb(255, 255, 255);
-  padding: 15px; 
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  color: rgb(233, 233, 233);
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* Stilizare pagină principală */
-main {
-  text-align: center;
-  padding: 20px;
-}
-
-.articole {
-  margin-top: 20px;
-}
-
-.articole article {
-  background-color: #af1616;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-}
-
-.articole-page nav {
-  display: none ;
-}
-
+/* Stilizare generală */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #000;
 }
+
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
   background-color: #333;
   color: white;
+  padding: 15px;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 15px;
 }
+
 .nav-links a {
   color: white;
   text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: 0.3s;
 }
+
+.nav-links a:hover {
+  color: #f1d116;
+  text-shadow: 0 0 10px #FFD700, 0 0 30px #FFA500;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Pagina principală */
+.pagina-principala {
+  background-color: #adedd3;
+}
+
+.moving-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveText 5s linear infinite;
+}
+
+@keyframes moveText {
+  from { transform: translate(-50%, -50%) translateX(100%); }
+  to { transform: translate(-50%, -50%) translateX(-100%); }
+}
+
+/* Pagina articole */
 .container {
   text-align: center;
   padding: 20px;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
 }
+
 .card {
   background: white;
   padding: 15px;
@@ -228,10 +222,12 @@ nav {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 .card img {
   width: 100%;
   border-radius: 10px;
 }
+
 button {
   background: #ff5733;
   color: white;
@@ -240,6 +236,23 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
 button:hover {
   background: #cc4626;
+}
+
+/* Pagina Despre */
+body.despre-page {
+  background-color: #f9a825; /* Orange deschis */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Pagina Contact */
+body.contact-page {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
