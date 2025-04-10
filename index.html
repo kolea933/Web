@@ -1,44 +1,113 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <div class="produse">
-        <p>👕 Articole Sport</p>
-        <p>👟 Încălțăminte Sport</p>
-        <p>💪 Creatina/🥤 Proteina</p>
-        <p>📚Cartea Care te <br> schimba</p>
-    </div>
-    <title>Magazin Sportiv</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magazin Sportiv</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magazin Sport</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #0a3d62;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .banner {
+      background: url('images.jpeg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px black;
+    }
+
+    .produse {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .produs {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .produs img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .produs h3 {
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
-<body class="pagina-principala">
-    <!-- Bara de navigare -->
+<body>
 
-
+  <header>
+    <h1>Magazin Sport</h1>
     <nav>
-        
-        <div class="logo">Acasă</div>
-        <ul  class="nav-links">
-            
-                    
-                    <li> <a href="despre.html">Despre</a></li>
-                    <li><a href="articole.html">Articole</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-            
-        </ul>
-            
-        
-        
-
-
-        <div class="menu-icon">&#9776;</div>
+      <a href="#">Acasă</a>
+      <a href="#">Produse</a>
+      <a href="#">Despre noi</a>
+      <a href="#">Contact</a>
     </nav>
+  </header>
 
+  <div class="banner">
+    Echipamente pentru un stil de viață activ
+  </div>
 
-    <p class="moving-text">⚽ Reduceri la echipamente sportive! 🏋️‍♂️</p>
+  <section class="produse">
+    <div class="produs">
+      <img src="rucsac-sport.jpg" alt="Rucsac Sport">
+      <h3>Rucsac Sport</h3>
+      <p>149 RON</p>
+    </div>
+    <div class="produs">
+      <img src="coarda-pentru-sarit-digitala-cu-cronometr.jpg" alt="Coardă digitală">
+      <h3>Coardă cu Cronometru</h3>
+      <p>89 RON</p>
+    </div>
+    <div class="produs">
+      <img src="Banda-de-alergat-electrica-Orion-Sprint-C6.jpg" alt="Bandă de alergat">
+      <h3>Bandă de Alergat</h3>
+      <p>2599 RON</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Magazin Sport. Toate drepturile rezervate.
+  </footer>
 
 </body>
 </html>
+
