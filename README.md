@@ -1,6 +1,6 @@
 # 🏀 Magazin de sport
 
-Bun venit la depozitul ** https://kolea933.github.io/Web/ ** - o platformă online pentru vânzarea articolelor sportive. Aici puteți găsi totul, de la haine și încălțăminte până la echipamente pentru diferite sporturi.
+Bun venit la depozitul [Magazin Sportiv](https://kolea933.github.io/Web/) - o platformă online pentru vânzarea articolelor sportive. Aici puteți găsi totul, de la haine și încălțăminte până la echipamente pentru diferite sporturi.
 
 ## 🚀 Caracteristici
 
