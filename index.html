@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <div class="produse">
-        <p>👕 Articole Sport</p>
-        <p>👟 Încălțăminte Sport</p>
-        <p>💪 Creatina/🥤 Proteina</p>
-        <p>📚Cartea Care te <br> schimba</p>
-    </div>
-    <title>Magazin Sportiv</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magazin Sportiv</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magazin Sport</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #0a3d62;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .fundal {
+      width: 100%;
+      height: 500px;
+      background-image: url('f4c136ef-2e3a-5bbc-9310-cdd8e37160ae.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .banner {
+      background: rgba(0, 0, 0, 0.5);
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px black;
+    }
+
+    footer {
+      background-color: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
-<body class="pagina-principala">
-    <!-- Bara de navigare -->
+<body>
 
-
+  <header>
+    <h1>Magazin Sport</h1>
     <nav>
-        
-        <div class="logo">Acasă</div>
-        <ul  class="nav-links">
-            
-                    
-                    <li> <a href="despre.html">Despre</a></li>
-                    <li><a href="articole.html">Articole</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-            
-        </ul>
-            
-        
-        
-
-
-        <div class="menu-icon">&#9776;</div>
+      <a href="#">Acasă</a>
+      <a href="articole.html">Produse</a>
+      <a href="despre.html">Despre noi</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </header>
+  
+  <div class="fundal"></div>
 
+  <div class="banner">
+    Echipamente pentru un stil de viață activ
+  </div>
 
-    <p class="moving-text">⚽ Reduceri la echipamente sportive! 🏋️‍♂️</p>
+  <footer>
+    &copy; 2025 Magazin Sport. Toate drepturile rezervate.
+  </footer>
 
 </body>
+
 </html>
